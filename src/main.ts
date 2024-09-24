@@ -1,6 +1,14 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 4000;
+
+app.get('/', (res:any) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 // verables for displayP1
 const tempS1 = document.querySelector('#temp') as HTMLParagraphElement;

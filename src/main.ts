@@ -1,4 +1,7 @@
-//import fs from 'fs';
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000
+
 // verables for displayP1
 const tempS1 = document.querySelector('#temp') as HTMLParagraphElement;
 const windS1= document.getElementById('wind') as HTMLParagraphElement;
